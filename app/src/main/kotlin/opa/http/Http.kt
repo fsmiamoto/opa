@@ -10,11 +10,11 @@ enum class HttpMethod {
         override fun asString(): String {
             return "post"
         }
-    };
+    }, ;
 
     abstract fun asString(): String
 
     fun fromString(value: String): HttpMethod? {
-        return HttpMethod.values().filter{v -> value.lowercase().equals(v)}.firstOrNull()
-    } 
+        return HttpMethod.values().filter { v -> value.lowercase().equals(v) }.firstOrNull()
+    }
 }
